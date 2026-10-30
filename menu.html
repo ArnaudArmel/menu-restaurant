@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>House of Chefs | Menu</title>
+  <link rel="icon" href="images/chef-logo.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="brand" href="index.html"><span>House of Chefs</span><img class="brand-logo" src="images/chef-logo.svg" alt=""></a>
+    <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="menu.html" aria-current="page">Order</a></nav>
+  </header>
+  <main class="order">
+    <section><p class="eyebrow">Choose what you love</p><h1>Our Menu</h1><p>Prices are in Canadian dollars. Choose 0 to 20 portions of each item.</p></section>
+    <div class="order-layout">
+      <section class="panel">
+        <h2>Today's dishes</h2>
+        <form id="order-form" novalidate>
+          <div class="menu-grid" id="menu-items"></div>
+          <p class="note">Quantities must be whole numbers from 0 to 20.</p>
+          <p class="error" id="form-error" role="alert"></p>
+          <button class="button" type="submit">Generate Receipt</button>
+          <button id="clear-order" type="button">Clear order</button>
+        </form>
+      </section>
+      <aside class="panel summary" aria-live="polite">
+        <p class="eyebrow">Your order</p><h2>Live total</h2>
+        <div class="total"><span>Subtotal</span><b id="live-subtotal">$0.00</b></div>
+        <div class="total"><span>GST (5%)</span><b id="live-tax">$0.00</b></div>
+        <div class="total"><span>TOTAL</span><b id="live-total">$0.00</b></div>
+        <div id="receipt" class="receipt" hidden></div>
+      </aside>
+    </div>
+  </main>
+  <footer>
+    <div>© <span class="year"></span> House of Chefs · Created by Arnaud Armel Fouda<br>
+      <a href="https://github.com/ArnaudArmel">GitHub</a> · <a href="https://www.linkedin.com/in/arnaud-armel-fouda/">LinkedIn</a>
+    </div>
+    <p class="weather" data-weather>Calgary · weather loading…</p>
+  </footer>
+</body>
+</html>
+
+
+
+
+

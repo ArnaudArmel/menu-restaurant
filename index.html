@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>House of Chefs | Home</title>
+  <link rel="icon" href="images/chef-logo.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="brand" href="index.html"><span>House of Chefs</span><img class="brand-logo" src="images/chef-logo.svg" alt=""></a>
+    <nav aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="menu.html">Order</a>
+    </nav>
+  </header>
+  <main>
+    <section class="intro">
+      <p class="eyebrow">Simple food, made with care</p>
+      <h1>Welcome to House of Chefs</h1>
+      <p>Comforting dishes, fresh ingredients, and a warm welcome.</p>
+      <a class="button" href="menu.html">View the menu and order</a>
+    </section>
+    <section class="gallery">
+      <div class="section-heading">
+        <div><p class="eyebrow">A little something delicious</p><h2>From our kitchen</h2></div>
+        <div>
+          <button id="previous-image" type="button" aria-label="Previous photo">←</button>
+          <button id="next-image" type="button" aria-label="Next photo">→</button>
+        </div>
+      </div>
+      <div class="carousel" id="carousel"></div>
+      <div class="carousel-bottom"><p id="image-caption"></p><button id="pause-carousel" type="button">Pause slideshow</button></div>
+      <p class="note" id="photo-credit"></p>
+      <p class="note">Enjoy a fresh look at our kitchen and menu.</p>
+    </section>
+    <section class="welcome">
+      <span aria-hidden="true">🍽️</span>
+      <div><h2>A good meal is waiting</h2><p>Choose your dishes and get an itemized receipt right away.</p></div>
+      <a class="button" href="menu.html">Open the menu</a>
+    </section>
+  </main>
+  <footer>
+    <div>© <span class="year"></span> House of Chefs · Created by Arnaud Armel Fouda<br>
+      <a href="https://github.com/ArnaudArmel">GitHub</a> · <a href="https://www.linkedin.com/in/arnaud-armel-fouda/">LinkedIn</a>
+    </div>
+    <p class="weather" data-weather>Calgary · weather loading…</p>
+  </footer>
+</body>
+</html>
+
+
+
+
+
